@@ -14,8 +14,8 @@ namespace q28
             int sum = 0;
             for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine("   {0,2}     {1,2}", i, sum);
                 sum += i;
+                Console.WriteLine("   {0,2}     {1,2}", i, sum);
             }
             Console.ReadLine();
         }

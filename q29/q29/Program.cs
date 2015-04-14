@@ -16,10 +16,12 @@ namespace ConsoleApplication2
             {
                 pn = p0 + p1 + p2;
                 Console.WriteLine("{0,2}ヶ月後       {1,5}       {2,5}      {3,5}      {4,5}", i, p0, p1, p2, pn);
-                int lastP0 = p0; 
-                p0 = p1 + p2;
+                int lastP0 = p0;
+                int lastP1 = p1;
+                int lastP2 = p2;
+                p0 = lastP1 + lastP2;
                 p1 = lastP0;
-                p2 = p0;
+                p2 = lastP1 + lastP2;
             }
             Console.Read();
         }

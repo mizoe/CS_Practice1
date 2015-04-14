@@ -10,7 +10,7 @@ namespace q26
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 10000; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 if (IsPrime(i))
                 {
