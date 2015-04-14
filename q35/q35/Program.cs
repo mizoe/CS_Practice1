@@ -10,7 +10,7 @@ namespace q35
     {
         static void Main(string[] args)
         {
-            var dows = new string[] { "日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日" };
+            //var dows = new string[] { "日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日" };
             int num;
             string input = "";
             Console.WriteLine("0～6 の数字を入力してください。対応した曜日を表示します。");
@@ -26,7 +26,33 @@ namespace q35
                 }
                 input = Console.ReadLine();
             }
-            Console.WriteLine(dows[num]);
+            //Console.WriteLine(dows[num]);
+            string dow;
+            switch (num)
+            {
+                case 0:
+                    dow = "日曜日";
+                    break;
+                case 1:
+                    dow = "月曜日";
+                    break;
+                case 2:
+                    dow = "火曜日";
+                    break;
+                case 3:
+                    dow = "水曜日";
+                    break;
+                case 4:
+                    dow = "木曜日";
+                    break;
+                case 5:
+                    dow = "金曜日";
+                    break;
+                default:
+                    dow = "土曜日";
+                    break;
+            }
+            Console.WriteLine(dow);
             Console.Read();
         }
     }
