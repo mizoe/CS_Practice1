@@ -28,7 +28,8 @@ namespace q32
             }
             Console.WriteLine("受験者 " + scores.Count + "名");
             Console.WriteLine("合計点 " + sum + "点");
-            Console.WriteLine("平均点 " + (int)(sum / scores.Count) + "点");
+            Console.WriteLine("平均点 点"+(5/3f));
+            Console.WriteLine("平均点 {0}点", (sum / scores.Count));
             Console.Read();
         }
     }
